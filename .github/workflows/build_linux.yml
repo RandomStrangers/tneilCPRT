@@ -49,13 +49,13 @@ jobs:
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
           SOURCE_FILE: 'src/cc-nix32-gl1'
-          DEST_NAME: 'TRPClient-Linux32-OpenGL'
+          DEST_NAME: 'tneilCPRT-Linux32-OpenGL'
           
       - uses: ./.github/actions/upload_build
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
           SOURCE_FILE: 'src/cc-nix32-gl2'
-          DEST_NAME: 'TRPClient-Linux32-ModernGL'
+          DEST_NAME: 'tneilCPRT-Linux32-ModernGL'
           
           
       - uses: ./.github/actions/notify_success
@@ -98,19 +98,19 @@ jobs:
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
           SOURCE_FILE: 'src/cc-nix64-gl1'
-          DEST_NAME: 'TRPClient-Linux64-OpenGL'
+          DEST_NAME: 'tneilCPRT-Linux64-OpenGL'
           
       - uses: ./.github/actions/upload_build
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
           SOURCE_FILE: 'src/cc-nix64-gl2'
-          DEST_NAME: 'TRPClient-Linux64-ModernGL'
+          DEST_NAME: 'tneilCPRT-Linux64-ModernGL'
           
       - uses: ./.github/actions/upload_build
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
           SOURCE_FILE: 'src/cc-sdl64-gl2'
-          DEST_NAME: 'TRPClient-Linux64-SDL2'
+          DEST_NAME: 'tneilCPRT-Linux64-SDL2'
           
           
       - uses: ./.github/actions/notify_success
