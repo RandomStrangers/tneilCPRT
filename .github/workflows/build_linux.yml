@@ -41,7 +41,7 @@ jobs:
       - uses: ./.github/actions/notify_failure
         if: ${{ always() && steps.compile.outcome == 'failure' }}
         with:
-          NOTIFY_MESSAGE: 'Failed to compile 32 bit TRPClient Linux build! <@999409543001931788>'
+          NOTIFY_MESSAGE: 'Failed to compile 32 bit tneilCPRT Linux build! <@999409543001931788>'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
       
       
@@ -90,7 +90,7 @@ jobs:
       - uses: ./.github/actions/notify_failure
         if: ${{ always() && steps.compile.outcome == 'failure' }}
         with:
-          NOTIFY_MESSAGE: 'Failed to compile 64 bit TRPClient Linux build! <@999409543001931788>'
+          NOTIFY_MESSAGE: 'Failed to compile 64 bit tneilCPRT Linux build! <@999409543001931788>'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
           
           
