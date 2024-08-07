@@ -147,7 +147,7 @@ public class MainActivity extends Activity
 	void startGameAsync() {
 		Log.i("CC_WIN", "handing off to native..");
 		try {
-			System.loadLibrary("classicube");
+			System.loadLibrary("tneilcprt");
 		} catch (UnsatisfiedLinkError ex) {
 			ex.printStackTrace();
 			showAlertAsync("Failed to start", ex.getMessage());
