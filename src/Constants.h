@@ -7,7 +7,7 @@ Copyright 2014-2023 ClassiCube | Licensed under BSD-3
 
 #define GAME_MAX_CMDARGS 5
 #define CC_APP_VER "1.3.6"
-#define APP_VER "1.0.2"
+#define APP_VER "1.0.3"
 #define GAME_API_VER 1
 
 #if defined CC_BUILD_OG
@@ -15,10 +15,10 @@ Copyright 2014-2023 ClassiCube | Licensed under BSD-3
 #define GAME_APP_TITLE "ClassiCube 1.3.6"
 #else
 #define CC_APP_NAME  "ClassiCube 1.3.6"
-#define OG_GAME_APP_NAME  "&aateB &d2.&e0.&c1 &5.P&6.R&4.T"
-#define OG_GAME_APP_TITLE "ateB 2.0.1 P.R.T"
-#define GAME_APP_NAME  "&aateB  &d2.0.1 &6ynomraH"
-#define GAME_APP_TITLE "ateB 2.0.1 ynomraH"
+#define OG_GAME_APP_NAME  "&aateB &d3.&e0.&c1 &5.P&6.R&4.T"
+#define OG_GAME_APP_TITLE "ateB 3.0.1 P.R.T"
+#define GAME_APP_NAME  "&aateB  &d3.0.1 &6ynomraH"
+#define GAME_APP_TITLE "ateB 3.0.1 ynomraH"
 #endif
 
 /* Max number of characters strings can have. */
@@ -79,7 +79,7 @@ so link directly to avoid a pointless redirect */
 /* Webpage where users can register for a new account */
 #define REGISTERNEW_URL "https://www.classicube.net/acc/register/"
 // Client download page
-#define CLIENT_URL "https://github.com/RandomStrangers/neilCPRT"
+#define CLIENT_URL "https://github.com/RandomStrangers/tneilCPRT"
 
 #define DEFAULT_USERNAME "Singleplayer"
 #endif
