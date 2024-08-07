@@ -6,8 +6,8 @@ namespace test
 {
 	public static class Program 
 	{
-		const string src = "CCicon.ico";
-		const string dst = "_CCIcon_X11.h";
+		const string src = "Icon.ico";
+		const string dst = "_Icon_X11.h";
 		
 		static void DumpIcon(StreamWriter sw, int width, int height) {
 			sw.WriteLine(width + "," + height + ",");
@@ -30,12 +30,12 @@ namespace test
 			using (StreamWriter sw = new StreamWriter(dst)) {
 				sw.WriteLine("/* Generated using misc/linux_icon_gen.cs */");
 				sw.WriteLine("");
-				sw.WriteLine("static const unsigned long CCIcon_Data[] = {");
+				sw.WriteLine("static const unsigned long Icon_Data[] = {");
 				DumpIcon(sw, 64, 64);
 				DumpIcon(sw, 32, 32);
 				DumpIcon(sw, 16, 16);
 				sw.WriteLine("};");
-				sw.WriteLine("static const int CCIcon_Size = sizeof(CCIcon_Data) / sizeof(unsigned long);");
+				sw.WriteLine("static const int Icon_Size = sizeof(Icon_Data) / sizeof(unsigned long);");
 			}
 		}
 	}

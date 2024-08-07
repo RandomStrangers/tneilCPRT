@@ -479,7 +479,7 @@ static void OnInit(void) {
 	}
 
 	ScheduledTask_Add(GAME_NET_TICKS, Server.Tick);
-	String_AppendConst(&Server.AppName, OG_GAME_APP_NAME);
+	String_AppendConst(&Server.AppName, GAME_APP_NAME);
 	String_AppendConst(&Server.AppName, Platform_AppNameSuffix);
 
 #ifdef CC_BUILD_WEB

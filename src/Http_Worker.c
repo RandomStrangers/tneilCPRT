@@ -127,7 +127,7 @@ static cc_string* Http_GetUserAgent_UNSAFE(void) {
 	static cc_string userAgent;
 
 	String_InitArray(userAgent, userAgentBuffer);
-	String_AppendConst(&userAgent, OG_GAME_APP_NAME);
+	String_AppendConst(&userAgent, GAME_APP_NAME);
 	String_AppendConst(&userAgent, Platform_AppNameSuffix);
 	return &userAgent;
 }
@@ -1118,7 +1118,7 @@ static void HttpBackend_Init(void) {
 	if (!wininet_lib) return;
 
 	/* TODO: Should we use INTERNET_OPEN_TYPE_PRECONFIG instead? */
-	hInternet = _InternetOpenA(OG_GAME_APP_NAME, INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
+	hInternet = _InternetOpenA(GAME_APP_NAME, INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
 	if (!hInternet) Logger_Abort2(GetLastError(), "Failed to init WinINet");
 }
 
