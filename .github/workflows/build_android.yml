@@ -97,3 +97,9 @@ jobs:
         with:
           SOURCE_FILE: 'src/cc.apk'
           DEST_NAME: 'TRPClient.apk'
+
+      - uses: ./.github/actions/notify_success
+        if: ${{ always() && steps.compile.outcome == 'success' }}
+        with:
+          NOTIFY_MESSAGE: 'Successfully compiled tneilCPRT android build.'
+          WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
