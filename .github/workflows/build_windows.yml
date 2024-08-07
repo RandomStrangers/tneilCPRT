@@ -41,7 +41,7 @@ jobs:
       - uses: ./.github/actions/notify_failure
         if: ${{ always() && steps.compile.outcome == 'failure' }}
         with:
-          NOTIFY_MESSAGE: 'Failed to compile 32 bit Windows build'
+          NOTIFY_MESSAGE: 'Failed to compile 32 bit tneilCPRT Windows build'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
           
           
@@ -73,7 +73,7 @@ jobs:
       - uses: ./.github/actions/notify_success
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
-          NOTIFY_MESSAGE: 'Successfully compiled 32 bit TRPClient Windows builds.'
+          NOTIFY_MESSAGE: 'Successfully compiled 32 bit tneilCPRT Windows builds.'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
           
           
@@ -130,5 +130,5 @@ jobs:
       - uses: ./.github/actions/notify_success
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
-          NOTIFY_MESSAGE: 'Successfully compiled 64 bit TRPClient Windows builds.'
+          NOTIFY_MESSAGE: 'Successfully compiled 64 bit tneilCPRT Windows builds.'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
